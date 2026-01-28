@@ -18,6 +18,8 @@ export default function CuratedStories (){
       </a>
       </div>
 
+      {/* Banner */}
+
       {/* Layout */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto">
         {/* left crad */}
