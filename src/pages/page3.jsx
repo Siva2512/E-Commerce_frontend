@@ -20,7 +20,7 @@ const Page3 = () => {
 
       <div className="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide">
         {images.map((img) => (
-          <div key={img.id} className="group text-left  mix-w-[320px] min-w-[350px]">
+          <div key={img.id} className="group text-left min-w-[400px] flex flex-col items-center">
 
             {/* Image Box */}
             <div className="relative h-[450px] w-full overflow-hidden">
@@ -28,7 +28,7 @@ const Page3 = () => {
               <Image
                 src={img.src}
                 alt={img.name}
-                className="object-cover transition duration-500 group-hover:scale-120"
+                className="object-cover transition duration-700 group-hover:scale-110"
               />
 
               {/* Hover Button */}

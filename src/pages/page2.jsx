@@ -23,11 +23,12 @@ export default function CuratedStories (){
       {/* Layout */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto">
         {/* left crad */}
-        <div className="md:col-span-7 relative group overflow-hidden bg-gray-200 h-full ">
+        <div className="md:col-span-7 relative group overflow-hidden bg-gray-200 h-[60vh] md:h-full ">
             <img 
             src="/img1.png"
             alt="Fashion Banner"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover 
+                       transition-transform duration-700 group-hover:scale-110"
             />
 
             <div className="absolute inset-0 bg-black/40"></div>
@@ -51,7 +52,8 @@ export default function CuratedStories (){
             <img 
             src="/img2.png"
             alt="Fashion Banner"
-            className="w-full  object-cover object-center"
+            className="w-full h-full  object-cover object-center transition-transform duration-700 group-hover:scale-110
+"
             />
 
             <div className="absolute inset-0 bg-black/40"></div>
@@ -70,7 +72,7 @@ export default function CuratedStories (){
             <img 
             src="/img3.png"
             alt="Fashion Banner"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 "
             />
 
             <div className="absolute inset-0 bg-black/40"></div>

@@ -1,42 +1,46 @@
-import { Search, ShoppingBag, User, Diamond } from "lucide-react";
+import { Search, ShoppingBag, User } from "lucide-react";
+import { FaGem } from "react-icons/fa";
+
 
 export default function Navbar() {
   return (
     <nav className="w-full bg-[#e6e6e3] border-b fixed top-0 left-0 z-50 backdrop-blur-md bg-[#e6e6e3]/70">
-      <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-16 grid grid-cols-[auto,1fr,auto] items-center">
 
         {/* LEFT MENU */}
-        <div className="hidden md:flex gap-8 ">
-          <a className="text-xs uppercase font-sansfont-semibold hover:text-blue-500" href="#">NEW ARRIVALS</a>
-          <a className="text-xs uppercase  font-sans font-semibold hover:text-blue-500" href="# ">COLLECTIONS</a>
+        <div className="hidden sm:flex gap-8 whitespace-nowrap font-sans text-[12px] ">
+          <a className="text-xs uppercase font-sans font-semibold hover:text-[#1152d4]" href="#">NEW ARRIVALS</a>
+          <a className="text-xs uppercase  font-sans font-semibold hover:text-[#1152d4]" href="# ">COLLECTIONS</a>
         </div>
 
         {/* CENTER LOGO */}
-        <div className="flex items-center gap-2 font-serif text-3xl font-bold absolute left-1/2 -translate-x-1/2 md:static md:translate-x-0">
-          <Diamond className="text-blue-600" size={28} />
+        <div className="flex items-center gap-2 text-3xl font-serif font-bold tracking-wider
+                justify-start sm:justify-center col-start-1 sm:col-start-2">
+          <FaGem className="text-3xl text-blue-600" />
           LUXE
         </div>
 
         {/* RIGHT MENU */}
 
-        <div className="flex items-center gap-4 font-medium 
-                justify-start md:justify-end w-full">
-                  <a className=" hidden md:block cursor-pointer hover:text-blue-500" href="#">MEN</a>
-                  <a className="hidden md:block cursor-pointer hover:text-blue-500" href="#">WOMEN</a>
+        <div className="flex items-center gap-8 font-medium font-sans text-[12px] 
+                justify-end sm:justify-end col-start-3 sm:col-start-3">
+                  <a className=" hidden sm:block cursor-pointer hover:text-blue-500" href="#">MEN</a>
+                  <a className="hidden sm:block cursor-pointer hover:text-blue-500" href="#">WOMEN</a>
                   {/* Search */}
-            <div className="p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
-              <Search size={24} />
+            <div className="p-1.5 md:p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
+              <Search size={20} />
+            
               </div>
             {/* Cart */}
             <div className="relative p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
-              <ShoppingBag size={24} />
+              <ShoppingBag size={20} />
               <span className="absolute -top-2 -right-2 bg-blue-600 text-white text-xs w-5 h-5 flex items-center justify-center rounded-full">
                 2
                 </span>
                 </div>
             {/* User */}
             <div className="p-2 rounded-full hover:bg-gray-200 transition cursor-pointer">
-              <User size={24} />
+              <User size={20} />
                </div>
                </div>
       </div>

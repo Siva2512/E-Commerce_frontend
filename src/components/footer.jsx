@@ -2,6 +2,8 @@ import React from "react";
 import { BiWorld } from "react-icons/bi";
 import { FiCamera } from "react-icons/fi";
 import { CiAt } from "react-icons/ci";
+import { FaGem } from "react-icons/fa";
+
 
 const Footer = () => {
   return (
@@ -10,7 +12,8 @@ const Footer = () => {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 py-21  md:grid-cols-2 lg:grid-cols-4 border-b border-[#1f2430]">
         {/* BRAND */}
         <div className="space-y-6">
-          <h2 className="text-2xl font-serif font-bold text-white">LUXE</h2>
+          <h2 className="text-2xl font-serif font-bold text-white flex items-center gap-2">
+            <FaGem className="text-3xl text-blue-600" />LUXE</h2>
 
           <p className=" text-[#9ca3af]">
             Defining modern luxury since 2012. Our mission is to provide

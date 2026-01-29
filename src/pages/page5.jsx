@@ -22,7 +22,7 @@ export default function Newsletter() {
               className="flex-1 bg-transparent outline-none text-sm placeholder-gray-400"
             />
 
-            <button className="text-xs font-bold tracking-widest hover:text-gray-600 transition px-6 py-4 uppercase whitespace-nowrap">
+            <button className="whitespace-nowrap py-4 text-xs tracking-widest hover:text-[#155dfc]">
               SIGN UP
             </button>
           </div>
