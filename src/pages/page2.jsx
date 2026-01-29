@@ -6,7 +6,7 @@ export default function CuratedStories (){
 
         <section className="max-w-7xl mx-auto px-4 py-8">
          {/* Heading */}
-       <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6" > 
+       <div className="flex flex-col bg-white md:flex-row md:justify-between md:items-center mb-6" > 
       <div className="mb-4">
         <h2 className="text-4xl font-serif font-medium">Curated Stories</h2>
         <p className="text-gray-500 text-lg mt-2 max-w-xl">
