@@ -21,7 +21,7 @@ const Page3 = () => {
 
       <div className="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide">
         {images.map((img) => (
-          <div key={img.id} className="group text-left min-w-[240px] sm:min-w-[300px] md:min-w-[350px] flex flex-col items-center">
+          <div key={img.id} className="group text-left min-w-[240px] sm:min-w-[300px] md:min-w-[350px] flex flex-col items-center mx-auto">
 
             {/* Image Box */}
             <div className="relative h-[450px] w-full overflow-hidden">
