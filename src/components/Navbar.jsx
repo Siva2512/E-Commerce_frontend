@@ -1,5 +1,6 @@
 import { Search, ShoppingBag, User } from "lucide-react";
-import { FaGem } from "react-icons/fa";
+import { MdOutlineDiamond } from "react-icons/md";
+
 
 
 export default function Navbar() {
@@ -7,7 +8,7 @@ export default function Navbar() {
     <nav className="w-full bg-white/80 border-b-transparent fixed top-0 left-0 z-50 backdrop-blur-md ">
       {/* w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 border-b border-black/5  */}
       
-      <div className="mx-auto flex  max-w-7xl items-center justify-between px-6  py-4.5 uppercase text-sm tracking-widest">
+      <div className="mx-auto flex  max-w-7xl items-center justify-between px-2 sm:px-6  py-4.5 uppercase text-sm tracking-widest">
 
         {/* LEFT MENU */}
         <div className="hidden sm:flex gap-8 whitespace-nowrap font-sans text-[12px] ">
@@ -17,8 +18,8 @@ export default function Navbar() {
 
         {/* CENTER LOGO */}
         <div className="flex items-center gap-2 text-3xl font-serif font-bold tracking-wider
-                justify-start sm:justify-center col-start-1 sm:col-start-2">
-          <FaGem className="text-3xl text-blue-600" />
+                 sm:absolute sm:left-1/2 sm:-translate-x-1/2">
+          <MdOutlineDiamond className="text-3xl text-blue-600" />
           LUXE
         </div>
 
