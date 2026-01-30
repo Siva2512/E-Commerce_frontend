@@ -19,9 +19,9 @@ const Page3 = () => {
 
       <h2 className="text-4xl font-serif text-center mb-10">Trending Now</h2>
 
-      <div className="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide">
+      <div className="flex gap-6 overflow-x-auto scroll-smooth snap-mandatory  scrollbar-hide px-4 pr-20">
         {images.map((img) => (
-          <div key={img.id} className="group text-left min-w-[240px] sm:min-w-[300px] md:min-w-[350px] flex flex-col items-center mx-auto">
+          <div key={img.id} className="group text-left min-w-[85%] sm:min-w-[300px] md:min-w-[350px] flex flex-col items-center mx-auto">
 
             {/* Image Box */}
             <div className="relative h-[450px] w-full overflow-hidden">
