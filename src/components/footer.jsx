@@ -7,13 +7,14 @@ import { FaGem } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#0b0f18] text-sm text-[#b6bdc7] px-10  md:px-10">
+    <footer className="w-full bg-[#0b0f18] text-sm text-[#b6bdc7]">
       {/* TOP FOOTER */}
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 py-21  md:grid-cols-2 lg:grid-cols-4 border-b border-[#1f2430]">
+      <div className="mx-auto px-6 grid max-w-7xl grid-cols-1 gap-12 py-21  md:grid-cols-2 lg:grid-cols-4 border-b border-[#1f2430]">
+        
         {/* BRAND */}
         <div className="space-y-6">
           <h2 className="text-2xl font-serif font-bold text-white flex items-center gap-2">
-            <FaGem className="text-3xl text-blue-600" />LUXE</h2>
+            LUXE</h2>
 
           <p className=" text-[#9ca3af]">
             Defining modern luxury since 2012. Our mission is to provide

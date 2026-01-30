@@ -4,8 +4,10 @@ import { FaGem } from "react-icons/fa";
 
 export default function Navbar() {
   return (
-    <nav className="w-full bg-[#e6e6e3] border-b fixed top-0 left-0 z-50 backdrop-blur-md bg-[#e6e6e3]/70">
-      <div className="max-w-7xl mx-auto px-6 h-16 grid grid-cols-[auto,1fr,auto] items-center">
+    <nav className="w-full bg-white/80 border-b-transparent fixed top-0 left-0 z-50 backdrop-blur-md ">
+      {/* w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 border-b border-black/5  */}
+      
+      <div className="mx-auto flex  max-w-7xl items-center justify-between px-6  py-4.5 uppercase text-sm tracking-widest">
 
         {/* LEFT MENU */}
         <div className="hidden sm:flex gap-8 whitespace-nowrap font-sans text-[12px] ">
@@ -22,7 +24,7 @@ export default function Navbar() {
 
         {/* RIGHT MENU */}
 
-        <div className="flex items-center gap-8 font-medium font-sans text-[12px] 
+        <div className="flex items-center gap-6 font-medium font-sans text-[12px] 
                 justify-end sm:justify-end col-start-3 sm:col-start-3">
                   <a className=" hidden sm:block cursor-pointer hover:text-blue-500" href="#">MEN</a>
                   <a className="hidden sm:block cursor-pointer hover:text-blue-500" href="#">WOMEN</a>

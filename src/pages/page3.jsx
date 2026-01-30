@@ -1,4 +1,5 @@
 import React from "react";
+import { BsPlusLg } from "react-icons/bs";
 import Image from "next/image";
 import img1 from "../../public/img4.png";
 import img2 from "../../public/img5.png";
@@ -20,7 +21,7 @@ const Page3 = () => {
 
       <div className="flex gap-6 overflow-x-auto scroll-smooth scrollbar-hide">
         {images.map((img) => (
-          <div key={img.id} className="group text-left min-w-[400px] flex flex-col items-center">
+          <div key={img.id} className="group text-left min-w-[350px] flex flex-col items-center">
 
             {/* Image Box */}
             <div className="relative h-[450px] w-full overflow-hidden">
@@ -28,13 +29,20 @@ const Page3 = () => {
               <Image
                 src={img.src}
                 alt={img.name}
-                className="object-cover transition duration-700 group-hover:scale-110"
+                className="object-cover transition scale-105 h-full duration-700 group-hover:scale-110"
               />
 
               {/* Hover Button */}
-              <button className="absolute bottom-0 left-0 w-full bg-black text-white py-3 text-sm font-medium opacity-0 group-hover:opacity-100 transition duration-300">
+              {/* <button className="absolute bottom-0  w-full bg-black text-white py-3 text-sm font-medium opacity-0 translate-y-full group-hover:translate-y-0">
       ADD TO BAG
-    </button>
+    </button> */}
+
+                <div className="absolute bottom-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <button className="w-full flex justify-center items-center gap-2 bg-gray-950 text-white py-4 text-xs font-bold uppercase tracking-widest">
+                    <BsPlusLg />
+                    Add to Bag
+                  </button>
+                </div>
 
             </div>
 

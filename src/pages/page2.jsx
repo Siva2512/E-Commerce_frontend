@@ -4,17 +4,19 @@ export default function CuratedStories (){
 
     return(
 
-        <section className="max-w-7xl mx-auto px-4 py-8">
+        <section className="max-w-7xl mx-auto bg-[#f5f5f7] px-4 py-24">
          {/* Heading */}
-       <div className="flex flex-col bg-white md:flex-row md:justify-between md:items-center mb-6" > 
+       <div className="flex flex-col  md:flex-row md:justify-between md:items-center mb-6" > 
       <div className="mb-4">
-        <h2 className="text-4xl font-serif font-medium">Curated Stories</h2>
+        <h2 className="text-4xl font-serif mb-4 md:text-5xl">Curated Edits</h2>
+
         <p className="text-gray-500 text-lg mt-2 max-w-xl">
          Explore our meticulously crafted collections designed for the modern lifestyle.
         </p>
       </div> 
-      <a href="#" className="group flex items-center font-serif gap-2 text-sm mt-6 md:mt-0 font-bold uppercase">View All Categories 
+      <a href="#" className="group flex items-center font-bold gap-2 tracking-widest text-sm mt-6 md:mt-0 font-bold uppercase">View All Categories 
          <ArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
+         {/* group flex items-center gap-2 text-sm font-bold uppercase tracking-widest mt-6 md:mt-0 */}
       </a>
       </div>
 
