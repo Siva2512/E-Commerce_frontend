@@ -19,32 +19,27 @@ const Page3 = () => {
 
       <h2 className="text-4xl font-serif text-center mb-10">Trending Now</h2>
 
-      <div className="flex gap-6 overflow-x-auto scroll-smooth snap-mandatory  scrollbar-hide px-4 pr-20">
+      <div className="flex gap-6 overflow-x-auto scrollbar-hide pb-10 ">
         {images.map((img) => (
-          <div key={img.id} className="group text-left min-w-[85%] sm:min-w-[300px] md:min-w-[350px] flex flex-col items-center mx-auto">
+          <div key={img.id} className="group min-w-[85%] sm:min-w-[300px] md:min-w-[350px] flex flex-col items-start mx-auto">
 
             {/* Image Box */}
+
             <div className="relative h-[450px] w-full overflow-hidden">
+  <Image
+    src={img.src}
+    alt={img.name}
+    className="object-cover transition duration-700 group-hover:scale-110 h-full w-full"
+  />
+</div>
 
-              <Image
-                src={img.src}
-                alt={img.name}
-                className="object-cover transition scale-105 h-full duration-700 group-hover:scale-110"
-              />
+<div className="w-full bg-gray-950 text-white py-3 text-xs font-bold uppercase tracking-widest flex justify-center items-center gap-2 opacity-0 group-hover:opacity-100 transition">
+  <BsPlusLg />
+  Add to Bag
+</div>
 
-              {/* Hover Button */}
-              {/* <button className="absolute bottom-0  w-full bg-black text-white py-3 text-sm font-medium opacity-0 translate-y-full group-hover:translate-y-0">
-      ADD TO BAG
-    </button> */}
 
-                <div className="absolute bottom-0 w-full translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                  <button className="w-full flex justify-center items-center gap-2 bg-gray-950 text-white py-4 text-xs font-bold uppercase tracking-widest">
-                    <BsPlusLg />
-                    Add to Bag
-                  </button>
-                </div>
-
-            </div>
+           
 
             {/* Product Info */}
             <h5 className="mt-2 bottom-0 text-sm font-bold uppercase tracking-tight  ">
