@@ -15,12 +15,11 @@ export default function Hero() {
       <div className="absolute inset-0 bg-black/40 "></div>
 
       {/* Text Content */}
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 pb-10 z-10 ">
-        <h1 className="text-white font-serif italic text-lg sm:text-xl md:text-3xl mb-3 opacity-90"> Autumn/Winter2024</h1>
-        <h1 className="  text-4xl md:text-6xl font-bold text-white md:text-6xl lg:text-7xl">
-          THE NEW <br /> STANDARD
-        </h1>
-      
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center text-white px-4 z-10">
+        <h1 className="font-serif italic text-base sm:text-lg md:text-2xl mb-2 opacity-90">Autumn / Winter 2024</h1>
+        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
+          THE NEW <br /> STANDARD</h1>
+
         <div className="mt-6 flex flex-col sm:flex-row gap-4">
           <button className="bg-white uppercase font-bold text-black px-6 sm:px-10 py-3 sm:py-4 hover:text-white hover:bg-blue-600 rounded-sm">
             Shop Men
