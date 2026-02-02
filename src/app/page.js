@@ -1,5 +1,5 @@
 import Hero from "@/pages/hero";
-import Navbar from "../components/Navbar"; // 👈 Add this line
+import Navbar from "../components/Navbar"; 
 import CuratedStories from "@/pages/page2";
 import Page3 from "@/pages/page3";
 import OurStory from "@/pages/page4";
