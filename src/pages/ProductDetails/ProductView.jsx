@@ -3,11 +3,12 @@ import { MdFavoriteBorder } from "react-icons/md";
 import { MdOutlineLocalShipping } from "react-icons/md";
 import { FiCheckCircle } from "react-icons/fi";
 import ProductAccordion from "./ProductAccordion";
-import Trending from "@/components/Trending";
+
 import Image from "next/image";
 import { useState } from "react";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/footer";
+
+import Trending from "@/components/Trending";
+
 
 export default function ProductPage() {
   const images = [
@@ -24,12 +25,7 @@ export default function ProductPage() {
   return (
     <>
     <section className="pt-32 pb-24 max-w-7xl mx-auto px-6 border-t border-gray-200">
-      <Navbar />
-
-      
       <div className="flex flex-col md:grid md:grid-cols-1 lg:flex lg:flex-row gap-8 mx-auto">
-
-       
         <div className="w-full lg:w-[60%]">
           <div className="md:grid md:grid-cols-12 md:gap-6 lg:flex lg:gap-6">
             <div className="hidden md:flex flex-col gap-4 w-full md:col-span-2 lg:w-20">
@@ -47,10 +43,6 @@ export default function ProductPage() {
                 </button>
               ))}
             </div>
-            
-           
-         
-
             
             <div className="w-full md:col-span-10 lg:flex-1">
               <div className="aspect-[3/4] bg-gray-100 relative overflow-hidden group">
@@ -91,21 +83,17 @@ export default function ProductPage() {
           </div>
         </div>
 
-        
         <div className="w-full lg:w-[40%] mt-8 md:mt-12 lg:mt-0">
           <div className="mb-8">
             <h4 className="text-[10px] uppercase tracking-[0.25em] text-gray-500 mb-4">
               The Winter Edit — Outerwear
             </h4>
-
             <h1 className="font-serif mb-5 text-4xl md:text-5xl text-black">
               Cashmere Overcoat
             </h1>
-
             <p className="font-serif text-2xl text-[#4b5563]">
               $850.00
             </p>
-
             <div className="mb-10 mt-8">
               <p className="text-[#4b5563] leading-relaxed italic mb-10 text-lg md:text-xl font-serif">
                 A study in quiet luxury. Crafted from the finest Italian cashmere, this
@@ -113,9 +101,7 @@ export default function ProductPage() {
                 timeless winter layering, it delivers exceptional warmth without weight.
               </p>
             </div>
-          </div>
-
-          
+          </div>   
           <div className="mt-0">
             <div className="flex justify-between items-center mb-4 my-2">
               <p className="text-xs font-bold">SELECT SIZE</p>
@@ -167,8 +153,6 @@ export default function ProductPage() {
         </div>
       </div>
     </section>
-    <Trending />
-    <Footer />
     </>
   );
 }

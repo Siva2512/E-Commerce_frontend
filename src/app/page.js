@@ -1,21 +1,22 @@
-import Hero from "@/pages/hero";
-import Navbar from "../components/Navbar"; 
-import CuratedStories from "@/pages/page2";
-import Page3 from "@/pages/page3";
-import OurStory from "@/pages/page4";
-import Footer from "@/components/footer";
-import Newsletter from "@/pages/page5";
+import Hero from "@/pages/Home-page/Hero";
+import CuratedEdits from "@/pages/Home-page/CuratedEdits";
+import TrendingProducts from "@/pages/Home-page/TrendingProducts";
+import BrandStory from "@/pages/Home-page/BrandStory";
+import Newsletter from "@/pages/Home-page/Newsletter";
+
+// import Footer from "@/components/footer";
+// import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Hero />
-      <CuratedStories />
-      <Page3 />
-      <OurStory />
-      <Newsletter/>
-      <Footer />
+      <CuratedEdits />
+      <TrendingProducts />
+      <BrandStory />
+      <Newsletter />
+      {/* <Footer /> */}
     </>
   );
 }

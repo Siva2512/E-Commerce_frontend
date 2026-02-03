@@ -31,14 +31,8 @@ export default function Hero() {
         </div>
 
         <div className="absolute bottom-6 left-1/2 -translate-x-1/2 animate-bounce cursor-pointer z-20">
-  <ChevronDown size={32} className="text-white opacity-80" />
-</div>
-
-    
-
-
-
-
+        <ChevronDown size={32} className="text-white opacity-80" />
+        </div>
       </div>
     </section>
   );

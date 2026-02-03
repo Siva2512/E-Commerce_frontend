@@ -3,7 +3,6 @@ import { FaAward } from "react-icons/fa";
 export default function OurStory() {
   return (
     <>
-      {/* FULL WIDTH BG SECTION */}
       <section className="w-full bg-[#F6F6F8] py-12 sm:py-20 md:py-24">
         
         {/* CENTER CONTENT */}

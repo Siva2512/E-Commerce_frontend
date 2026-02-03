@@ -16,11 +16,9 @@ export default function CuratedStories (){
       </div> 
       <a href="#" className="group flex items-center font-bold gap-2 tracking-widest text-sm mt-6 md:mt-0 font-bold uppercase">View All Categories 
          <ArrowRight className="transition-transform duration-300 group-hover:translate-x-2" />
-         {/* group flex items-center gap-2 text-sm font-bold uppercase tracking-widest mt-6 md:mt-0 */}
       </a>
       </div>
 
-      {/* Banner */}
 
       {/* Layout */}
       <div className="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto">
