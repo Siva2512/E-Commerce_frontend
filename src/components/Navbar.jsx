@@ -8,7 +8,8 @@ export default function Navbar() {
     <nav className="w-full bg-white/80 border-b-transparent fixed top-0 left-0 z-50 backdrop-blur-md ">
       {/* w-full bg-white/80 backdrop-blur-md fixed top-0 z-50 border-b border-black/5  */}
       
-      <div className="mx-auto flex  max-w-7xl items-center justify-between px-6 py-4 uppercase text-sm tracking-widest">
+      <div className="mx-auto flex  max-w-7xl items-center justify-between px-2 py-4 uppercase text-sm tracking-widest">
+
         {/* LEFT MENU */}
         <div className="hidden sm:flex gap-8 whitespace-nowrap font-sans text-[12px] ">
           <a className="text-xs uppercase font-sans font-semibold hover:text-[#1152d4]" href="#">NEW ARRIVALS</a>

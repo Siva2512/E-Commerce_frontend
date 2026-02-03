@@ -4,6 +4,8 @@ import TrendingProducts from "@/pages/Home-page/TrendingProducts";
 import BrandStory from "@/pages/Home-page/BrandStory";
 import Newsletter from "@/pages/Home-page/Newsletter";
 
+
+
 // import Footer from "@/components/footer";
 // import Navbar from "@/components/Navbar";
 
@@ -16,6 +18,7 @@ export default function Home() {
       <TrendingProducts />
       <BrandStory />
       <Newsletter />
+   
       {/* <Footer /> */}
     </>
   );
