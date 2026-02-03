@@ -16,8 +16,9 @@ const Trending = () => {
 
 
   return (
-    <section className="w-full bg-[#f9fafb] px-2 py-24">
-      <h2 className="font-serif text-3xl mb-12 text-center">
+    <section className="w-full bg-[#f9fafb]  py-24">
+      <div className="mx-auto max-w-7xl px-6">
+      <h2 className=" mb-10 text-center font-serif text-3xl">
         Complete the Look
       </h2>
 
@@ -27,6 +28,7 @@ const Trending = () => {
             <ProductCard key={img.id} cards={img}/>
          
         ))}
+      </div>
       </div>
     </section>
   );
