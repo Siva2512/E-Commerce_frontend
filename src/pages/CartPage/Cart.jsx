@@ -175,7 +175,7 @@ export default function Cart() {
                       </div>
 
                      
-                      <div className="md:flex gap-6 mt-3 sm:mt-4 md:pb-3 ">
+                      <div className=" block md:flex gap-6 mt-3 sm:mt-4 md:pb-3 ">
                         <button
                           className="text-xs  uppercase font-semibold hover:text-blue-600 cursor-pointer"
                           onClick={() => saveForLater(item.id)}
