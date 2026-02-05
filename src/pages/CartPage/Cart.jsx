@@ -96,7 +96,7 @@ export default function Cart() {
   return (
     <section className="bg-[#f5f5f7] pt-[72px] pb-12">
       <div className="px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row gap-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row lg:flex-row gap-6">
 
           {/* LEFT CARD */}
           <div className="w-full md:basis-[70%] flex flex-col max-h-[80vh]">
@@ -111,14 +111,14 @@ export default function Cart() {
               </button>
             </div>
 
-            {/* CART ITEMS */}
-            <div className="flex-1 overflow-y-auto bg-white rounded-sm shadow-sm">
+           
+            <div className="flex-1 overflow-y-auto scrollbar-hide bg-white rounded-sm shadow-sm">
               {items.map(item => (
                 <div
                   key={item.id}
                   className="p-4 md:p-6 flex flex-col md:flex-row gap-4 border-b last:border-b-0"
                 >
-                  {/* IMAGE + QTY */}
+                  
                   <div className="flex flex-col items-start sm:w-full md:w-auto">
                     <Image
                       src={item.image}
@@ -174,7 +174,7 @@ export default function Cart() {
                         </span>
                       </div>
 
-                      {/* ACTIONS – sm only spacing */}
+                     
                       <div className="flex gap-6 mt-3 sm:mt-4">
                         <button
                           className="text-xs sm:text-sm uppercase font-semibold"
@@ -191,7 +191,7 @@ export default function Cart() {
                       </div>
                     </div>
 
-                    {/* DELIVERY – sm only spacing */}
+                   
                     <div className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3">
                       Delivery by{" "}
                       <span className="font-semibold">{item.delivery}</span>
