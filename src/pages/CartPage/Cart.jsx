@@ -96,50 +96,50 @@ export default function Cart() {
   return (
     <section className="bg-[#f5f5f7] pt-[72px] pb-12">
       <div className="px-4 md:px-8">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row lg:flex-row gap-6">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row gap-6">
 
           {/* LEFT CARD */}
-          <div className="w-full md:basis-[70%] flex flex-col max-h-[80vh]">
+          <div className="w-[100%] lg:w-[70%] flex flex-col ">
 
             {/* ADDRESS */}
-            <div className="bg-white rounded-sm shadow-sm p-4 mb-3 flex justify-between items-center">
-              <h3 className="text-base sm:text-lg font-semibold text-gray-900">
+            <div className="bg-white  rounded-sm shadow-sm  p-2 md:p-4 mb-3 flex justify-between items-center">
+              <h3 className="text-sm md:text-lg font-semibold text-gray-900">
                 From Saved Addresses
               </h3>
-              <button className="text-xs sm:text-sm text-blue-600 border-blue-600 px-3 py-1 rounded">
+              <button className="text-sm md:text-lg text-blue-600 border-blue-600  rounded">
                 Enter Delivery Pincode
               </button>
             </div>
 
            
-            <div className="flex-1 overflow-y-auto scrollbar-hide bg-white rounded-sm shadow-sm">
+            <div className="flex-1 w-[100%] overflow-y-auto scrollbar-hide bg-white rounded-sm shadow-sm">
               {items.map(item => (
                 <div
                   key={item.id}
-                  className="p-4 md:p-6 flex flex-col md:flex-row gap-4 border-b last:border-b-0"
+                  className="p-4 md:p-6 flex flex-col justify-between md:flex-row gap-4 border-b border-[#e0e0e0] last:border-b-0"
                 >
-                  
-                  <div className="flex flex-col items-start sm:w-full md:w-auto">
+                  <div className="flex gap-4">
+                    <div className="flex flex-col items-start sm:w-full md:w-auto">
                     <Image
                       src={item.image}
                       alt="product"
                       width={100}
                       height={100}
-                      className="object-cover mb-4"
+                      className="object-cover mb-4 w-20 h-20 md:w-25 md:h-25"
                     />
 
-                    <div className="flex items-center gap-2 sm:mt-2">
+                    <div className="flex justify-center items-center gap-2 sm:mt-2">
                       <button
-                        className="w-8 h-8 border rounded-full"
+                        className="flex justify-center items-center w-5 h-5 md:w-8 md:h-8 border rounded-full"
                         onClick={() => decreaseQty(item.id)}
                       >
                         -
                       </button>
-                      <span className="px-5 py-1 border text-sm">
+                      <span className="px-3 md:px-5 md:py-1 border text-sm">
                         {item.qty}
                       </span>
                       <button
-                        className="w-8 h-8 border rounded-full"
+                        className="flex justify-center items-center w-5 h-5 md:w-8 md:h-8 border rounded-full"
                         onClick={() => increaseQty(item.id)}
                       >
                         +
@@ -149,9 +149,9 @@ export default function Cart() {
 
                   {/* CONTENT */}
                   <div className="flex flex-col md:flex-row md:justify-between w-full gap-4">
-                    <div className="flex flex-col justify-between pb-3">
+                    <div className="flex flex-col justify-between ">
                       <div>
-                        <h3 className="text-sm sm:text-base md:text-lg font-bold uppercase">
+                        <h3 className="text-xs  md:text-lg font-bold uppercase">
                           {item.title}
                         </h3>
                         <p className="text-xs sm:text-sm text-gray-500">
@@ -175,15 +175,15 @@ export default function Cart() {
                       </div>
 
                      
-                      <div className="flex gap-6 mt-3 sm:mt-4">
+                      <div className="md:flex gap-6 mt-3 sm:mt-4 md:pb-3 ">
                         <button
-                          className="text-xs sm:text-sm uppercase font-semibold"
+                          className="text-xs  uppercase font-semibold hover:text-blue-600 cursor-pointer"
                           onClick={() => saveForLater(item.id)}
                         >
                           Save for later
                         </button>
                         <button
-                          className="text-xs sm:text-sm uppercase font-semibold"
+                          className="text-xs  uppercase font-semibold hover:text-blue-600 cursor-pointer"
                           onClick={() => removeItem(item.id)}
                         >
                           Remove
@@ -192,17 +192,20 @@ export default function Cart() {
                     </div>
 
                    
-                    <div className="text-xs sm:text-sm text-gray-500 mt-2 sm:mt-3">
+                  </div>
+                  </div>
+                  
+                    <div className="text-xs sm:text-sm text-gray-500 ">
                       Delivery by{" "}
                       <span className="font-semibold">{item.delivery}</span>
                     </div>
-                  </div>
+                  
                 </div>
               ))}
             </div>
 
             {/* PLACE ORDER */}
-            <div className="sticky bottom-0 bg-white border-t p-4 flex justify-center md:justify-end">
+            <div className="sticky bottom-0 bg-white inset-shadow-lg p-4 flex justify-center md:justify-end">
               <button className="w-full md:w-auto bg-black text-white px-6 py-3 uppercase font-semibold">
                 PLACE ORDER
               </button>
@@ -210,7 +213,7 @@ export default function Cart() {
           </div>
 
           {/* RIGHT CARD */}
-          <div className="w-full md:w-[30%]">
+          <div className="w-full lg:w-[30%]">
             <div className="bg-white rounded-sm shadow-sm p-4">
               <h3 className="font-semibold mb-4">Price details</h3>
 
@@ -225,7 +228,7 @@ export default function Cart() {
                   <span>-₹{totalDiscount}</span>
                 </div>
 
-                <div className="flex justify-between font-semibold border-t pt-4">
+                <div className="flex justify-between font-semibold border-t border-[#e0e0e0] pt-4">
                   <span>Total Amount</span>
                   <span>₹{totalPrice}</span>
                 </div>
